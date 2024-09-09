@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- Deklarerar dokumenttyp och HTML-version. -->
+
+<html lang="sv">
+    <!-- Root-element som kapslar in hela HTML-dokumentet. "lang" attributet specificerar att dokumentet är på svenska. -->
+
+    <head>
+        <!-- Innehåller metadata och länkar till externa resurser som stilmallar. -->
+
+        <meta charset="UTF-8">
+        <!-- Anger teckenkodning för dokumentet som UTF-8. -->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Gör sidan responsiv och anpassar visningsporten för olika enheter. -->
+
+        <title>Café Choco-Latte - Bokning</title>
+        <!-- Anger sidans titel som visas i webbläsarens flik. -->
+
+        <link rel="stylesheet" href="../css/style.css">
+        <!-- Länkar till extern CSS-fil som definierar sidans stil. -->
+    </head>
+
+    <body>
+        <!-- Innehåller sidans synliga innehåll. -->
+
+        <header>
+            <!-- Innehåller sidans huvudrubrik och navigeringsmeny. -->
+
+            <h1>Café Choco-Latte</h1>
+            <!-- Huvudrubrik för sidan, som visar caféets namn. -->
+
+            <nav>
+                <!-- Innehåller navigeringslänkar till andra sidor på webbplatsen. -->
+
+                <ul>
+                    <!-- Listar navigeringsalternativen. -->
+
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="chokladprovning.html">Chokladprovning</a></li>
+                    <li><a href="kakaotradet.html">Kakaoträdet</a></li>
+                    <li><a href="bokning.html">Bokning</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Huvudsektionen på sidan som innehåller det primära innehållet. -->
+
+            <section>
+                <!-- En sektion för att gruppera relaterat innehåll. -->
+
+                <h2>Boka din chokladprovning</h2>
+                <!-- Sekundär rubrik som förklarar sidans syfte, bokning av chokladprovning. -->
+
+                <p>Vänligen fyll i formuläret nedan för att boka din chokladprovning.</p>
+                <!-- En kort beskrivning som instruerar användaren vad de ska göra. -->
+
+                <form action="#" method="post">
+                    <!-- Formulär som skickar in användardata. -->
+
+                    <fieldset>
+                        <!-- Grupp av relaterade formulärkontroller. -->
+
+                        <legend>Välj datum</legend>
+                        <!-- Rubrik för det här fältet i formuläret. -->
+
+                        <label>
+                            <input type="radio" name="date" value="30 april"> 30 april
+                        </label><br>
+                        <!-- Radio-knapp för att välja ett datum, etikett för att beskriva alternativet. -->
+
+                        <label>
+                            <input type="radio" name="date" value="2 maj"> 2 maj
+                        </label><br>
+
+                        <label>
+                            <input type="radio" name="date" value="7 maj"> 7 maj
+                        </label><br>
+
+                        <label>
+                            <input type="radio" name="date" value="9 maj"> 9 maj
+                        </label><br>
+
+                        <label>
+                            <input type="radio" name="date" value="14 maj"> 14 maj
+                        </label><br>
+
+                        <label>
+                            <input type="radio" name="date" value="16 maj"> 16 maj
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <!-- Grupp av relaterade formulärkontroller. -->
+
+                        <legend>Välj antal personer</legend>
+                        <!-- Rubrik för det här fältet i formuläret. -->
+
+                        <select name="guests" id="guests">
+                            <!-- Rullgardinsmeny för att välja antal gäster. -->
+
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <!-- Grupp av relaterade formulärkontroller. -->
+
+                        <legend>Fyll i dina uppgifter</legend>
+                        <!-- Rubrik för det här fältet i formuläret. -->
+
+                        <label for="name">Namn:</label>
+                        <input type="text" id="name" name="name" required><br>
+                        <!-- Textfält för att fylla i namn, med krav på att det ska fyllas i. -->
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br>
+                        <!-- Textfält för att fylla i e-postadress, med krav på att det ska fyllas i. -->
+
+                        <label for="phone">Mobilnummer:</label>
+                        <input type="tel" id="phone" name="phone"><br>
+                        <!-- Textfält för att fylla i mobilnummer, ingen obligatorisk fyllning. -->
+                    </fieldset>
+
+                    <fieldset>
+                        <!-- Grupp av relaterade formulärkontroller. -->
+
+                        <legend>Meddelande</legend>
+                        <!-- Rubrik för det här fältet i formuläret. -->
+
+                        <textarea id="message" name="message" rows="4" placeholder="Skriv ditt meddelande här..."></textarea>
+                        <!-- Textområde för att fylla i meddelande, med en platsbeskrivning. -->
+                    </fieldset>
+
+                    <button type="submit">Bekräfta bokning</button>
+                    <!-- En knapp för att skicka formuläret. -->
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <!-- Sidfot som innehåller copyright-information. -->
+
+            <p>&copy; 2024 Café Choco-Latte. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
